@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Header.jsx';
 import Home from './Home.jsx';
 import "./App.css"
+import Footer from './Footer.jsx';
 
 // заглушка от цыганей fjfjfjfjfjfjgit c
 const Catalog = () => <div>Catalog Page</div>;
@@ -13,13 +14,14 @@ function App() {
 
   return (
     <Router>
-      <Header />
+      <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/news" element={<News />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
