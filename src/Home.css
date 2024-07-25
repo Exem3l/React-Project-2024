@@ -1,8 +1,21 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .banner {
     position: relative;
     width: 100%;
     height: 100vh; 
     overflow: hidden;
+    margin-top: -60px;
+    z-index: 1;
   }
   
   .banner-img {
@@ -21,25 +34,47 @@
   }
   
   .banner-buttons {
+    animation: fadeIn 1s forwards;
     margin-top: 20px;
   }
   
   .btn {
+    display: inline-block;
     padding: 10px 20px;
-    margin: 0 10px;
+    margin:  4px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
+    text-align: center;
+    width: 90px;
+    height: 45px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    clip-path: polygon(
+      10% 0%,   
+      100% 0%,  
+      100% 90%, 
+      90% 100%, 
+      0% 100%,
+      0% 10%    
+    );
   }
   
   .white-btn {
     background-color: white;
     color: black;
   }
-  
+
+  .white-btn:hover{
+    transform: scale(1.1);
+  }
+
   .gray-btn {
-    background-color: gray;
+    background-color: rgb(17, 17, 17);
     color: white;
+  }
+
+  .gray-btn:hover{
+    transform: scale(1.1);
   }
   
   .slick-slider {
