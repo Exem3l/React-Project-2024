@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo"><img className = "logo-img" src="public\logo.webp" alt="" /></div>
+      <div className="logo"><img className = "logo-img" src="public\logo.png" alt="" /></div>
       <nav className="nav">
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/catalog" className="nav-link">Catalog</Link>

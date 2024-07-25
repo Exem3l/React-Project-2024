@@ -14,8 +14,6 @@
     width: 100%;
     height: 100vh; 
     overflow: hidden;
-    margin-top: -60px;
-    z-index: 1;
   }
   
   .banner-img {
@@ -25,12 +23,21 @@
   }
   
   .banner-content {
+    background-color: rgba(0, 0, 0, 0.418);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+    clip-path: polygon(
+      10% 0%,   
+      100% 0%,  
+      100% 90%, 
+      90% 100%, 
+      0% 100%,
+      0% 10%    
+    );
   }
   
   .banner-buttons {

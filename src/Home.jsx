@@ -19,8 +19,8 @@ const Home = () => {
         <div className="banner-content">
           <h1>Welcome to AORUS</h1>
           <div className="banner-buttons">
-            <button className="btn white-btn">White Button</button>
-            <button className="btn gray-btn">Gray Button</button>
+            <button className="btn white-btn">About</button>
+            <button className="btn gray-btn">News</button>
           </div>
         </div>
       </div>
