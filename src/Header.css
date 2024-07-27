@@ -46,8 +46,8 @@
 }
 
 .nav-link:hover {
-  text-decoration:#ff5500 ;
   text-decoration: underline;
+  text-decoration-color: #ff5500;
   transform: scale(1.1);
 }
 

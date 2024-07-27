@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('.public/Aldrich-Regular.ttf') format('truetype');
+    src: url('../public/Aldrich-Regular.ttf') format('truetype');
     font-style: italic;
   }
 
