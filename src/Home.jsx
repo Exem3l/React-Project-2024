@@ -3,12 +3,15 @@ import './Home.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import products from './Products.js';
 
 const Home = () => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
+    autoplay:true,
+    autoplaySpeed:2000,
     slidesToShow: 5,
     slidesToScroll: 1,
     appendDots: dots => (
@@ -57,25 +60,30 @@ const Home = () => {
           </p>
       </section>
       <Slider {...settings}>
-        <div>
-          <h3><img src="src/assets/pc-1.jpg" alt="Slide 1" /></h3>
-        </div>
-        <div>
-          <h3><img src="src/assets/pc-1.jpg" alt="Slide 2" /></h3>
-        </div>
-        <div>
-          <h3><img src="src/assets/pc-1.jpg" alt="Slide 3" /></h3>
-        </div>
-        <div>
-          <h3><img src="src/assets/pc-1.jpg" alt="Slide 4" /></h3>
-        </div>
-        <div>
-          <h3><img src="src/assets/pc-1.jpg" alt="Slide 5" /></h3>
-        </div>
-        <div>
-          <h3><img src="src/assets/pc-1.jpg" alt="Slide 6" /></h3>
-        </div>
+        {products.map(product => (
+          <div key={product.id} className="slider">
+            <img src={product.image} alt={product.name} className="slider-image" />
+            <h3 className="product-name">{product.name}</h3>
+          </div>
+        ))}
       </Slider>
+        <section className="cooling-section">
+          <div className="cooling-text">
+            <h2>Exceptional Cooling for All Computers</h2>
+            <p>
+              At AORUS, we prioritize optimal cooling solutions to ensure peak performance for all your computing needs. Our advanced cooling technologies prevent overheating, enhance system stability, and prolong the lifespan of your components.
+            </p>
+          </div>
+          <div className="cooling-image">
+            <img
+              src="src/assets/ezgif-4-e082afa722.gif"
+              alt="Cooling Technology"
+              width="560"
+              height="315"
+            />
+          </div>
+        </section>
+
     </div>
     
   );
