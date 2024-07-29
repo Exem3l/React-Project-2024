@@ -5,10 +5,11 @@ import Footer from './Footer.jsx';
 import Home from './Home.jsx';
 import News from './News.jsx';
 import AboutUs from './AboutUs.jsx';
+import Catalog from './Catalog.jsx';
+import Login from './Reg Module/Login.jsx';
+import Register from './Reg Module/Register.jsx';
 import "./App.css"
 
-// заглушка от цыганей fjfjfjfjfjfjgit c
-const Catalog = () => <div>Catalog Page</div>;
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/news" element={<News />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/login" element={<Login setIsLoggedIn={() => {}} />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer/>
     </Router>

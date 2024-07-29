@@ -8,7 +8,6 @@
     transform: translateY(0);
   }
 }
-
 .banner {
     position: relative;
     width: 100%;
@@ -70,6 +69,16 @@
     transition: 0.5s;
   }
 
+  .orange-btn .orange-btn-link{
+    color: white;
+    text-decoration: none;
+  }
+
+  .orange-btn .orange-btn-link:hover{
+    color: black;
+    text-decoration: none;
+  }
+
   .gray-btn {
     background-color: rgba(17, 17, 17, 0.486);
     color: white;
@@ -81,7 +90,17 @@
     transform: scale(1.1);
     transition: 0.5s;
   }
-  
+
+  .gray-btn .gray-btn-link{
+    color: white;
+    text-decoration: none;
+  }
+
+  .gray-btn .gray-btn-link:hover{
+    color: black;
+    text-decoration: none;
+  }
+
   .slick-slider {
     width: 100%;
   }

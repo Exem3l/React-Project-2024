@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import products from './Products.js';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const settings = {
@@ -48,8 +49,8 @@ const Home = () => {
         <div className="banner-content">
           <h1>Welcome to AORUS</h1>
           <div className="banner-buttons">
-            <button className="btn orange-btn">About</button>
-            <button className="btn gray-btn">News</button>
+            <button className="btn orange-btn"><Link to="/about" className="orange-btn-link">About</Link></button>
+            <button className="btn gray-btn"><Link to="/about" className="gray-btn-link">News</Link></button>
           </div>
         </div>
       </div>
